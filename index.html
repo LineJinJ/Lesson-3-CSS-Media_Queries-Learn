@@ -6,7 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Media Queries</title>
     <style>
-      @media() {
+      @media (max-width: 600px) {
+        h1,
+        p {
+          text-align: center;
+        }
+        h2 {
+          display: none;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        body {
+          background-color: red;
+          color: white;
+        }
       }
     </style>
   </head>
